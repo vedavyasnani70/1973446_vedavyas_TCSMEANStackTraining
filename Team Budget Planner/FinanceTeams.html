@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Teams</title>
+    <link rel="stylesheet" href="TeamBudget.css">
+    <script src="TeamBudget.js"></script>
+
+</head>
+<body>
+    <h1>Finance Teams</h1>
+    <h2>Annual Budget</h2>
+    <div style="display:inline" >ClientName:</div>
+    <div id = "result1" style="display:inline"></div></br>
+<div style="display:inline" >ProjectName:</div>
+<div id = "result2" style="display:inline"></div></br>
+<div style="display:inline" >Budget:</div>
+<div id = "result3" style="display:inline"></div></br>
+<script>
+document.getElementById("result1").innerHTML=localStorage.getItem("textvalue1");
+document.getElementById("result2").innerHTML=localStorage.getItem("textvalue2");
+document.getElementById("result3").innerHTML=localStorage.getItem("textvalue3");
+</script>
+    
+
+
+</body>
+</html>

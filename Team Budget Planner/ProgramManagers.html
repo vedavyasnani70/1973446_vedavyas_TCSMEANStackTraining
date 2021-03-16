@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Managers</title>
+    <link rel="stylesheet" href="TeamBudget.css">
+    <script src="TeamBudget.js"></script>
+</head>
+<body>
+    <h1>Program Managers</h1>
+    <h2>Add New Budget</h2>
+    <form action="FinanceTeams.html">
+        <label>ClientName</label>
+        <input type="text" id="clientname" /><br/><br/>
+            <label>ProjectName</label>
+        <input type="text" id="projectname" /><br/><br/>
+            <label>Budget</label>
+        <input type="text" id="budget" /><br/><br/>
+        <input type="submit" value="add" onclick="passvalues();"/><br/><br/>
+        
+    </form> 
+    
+            <input type="button" value="clear" onclick="resetData()"/><br/><br/>
+            <input type="button" value="Back" onclick="location.href='TeamBudget.html';"/><br/>
+    
+</body>
+</html>
