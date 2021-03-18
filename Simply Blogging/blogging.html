@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Blogging</title>
+    <script src="blogging.js"></script>
+    <link rel="stylesheet" href="blogging.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Simply Blogging</h1>
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+        <a href="#" class="nav-link"> Add Blog </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">AboutUs</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Contacts</a>
+        </li>
+    </ul> 
+    <form action="" method="get" class="form-group"></form>
+    <form>
+    <label>Title</label>
+    <input type="text" id="title"/><br/>
+    <label>Description</label>
+    <textarea type="text" id="desc"></textarea><br/>
+    <input type="file" id="imageId" class="btn btn-dark"/><br/>
+    <input type="button" value="Add Blog" 
+    onclick="onFormSubmit()" class="btn btn-primary"/> 
+    <input type="button" value="Save" onclick="storeInSession()" class="btn btn-primary"/>
+    <input type="button" value="retrieve" onclick="retrieveFromSession()" class="btn btn-primary"/>
+    </form>
+    <hr/>
+    <div>
+        <div id="titleInfo"></div>
+        <div id="descInfo"></div>
+        <img src="" id="imageInfo"/>
+    </div>
+    <table id="blogDetails">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <img src="" id="imageId"/>
+
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+       
+    
+</body>
+</html>
