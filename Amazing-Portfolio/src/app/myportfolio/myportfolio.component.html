@@ -1,0 +1,13 @@
+<div>
+    <h2>My Portfolio</h2>
+    <h3>Welcome Veda Vyas</h3>
+    <form #userRef="ngForm" (ngSubmit)="checkUser(userRef.value)">
+        <label>Contact Name</label>
+        <input type="text" name="contact" ngModel/> <br/>
+        <label>Phone Number</label>
+        <input type="number" name="phone" ngModel/> <br/>
+        <input type="submit" value="Save"/>
+        <input type="reset" value="reset"/>
+    </form>
+    {{msg}}
+</div>
